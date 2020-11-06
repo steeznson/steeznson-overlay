@@ -11,7 +11,21 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=""
+# dep gnome-extra/zenity substituted for gnome-extra/yad, see docs
+DEPEND="
+        app-shells/bash
+        dev-vcs/git
+        sys-process/procps
+        app-arch/unzip
+        net-misc/wget
+        sys-apps/which
+        x11-misc/wmctrl
+        x11-misc/xdotool
+        x11-apps/xprop
+        x11-apps/xrandr
+        x11-apps/xwininfo
+        gnome-extra/zenity
+"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
